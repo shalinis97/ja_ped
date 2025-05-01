@@ -35,7 +35,7 @@ To set up JA-PED on your local machine:
 
    ```bash
    git clone https://github.com/shalinis97/JA_PED.git
-   cd JA-PED
+   cd JA_PED
    ```
 2. **Install the required dependencies**
 
