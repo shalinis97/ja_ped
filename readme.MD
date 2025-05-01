@@ -1,10 +1,10 @@
 # JA-PED : Just Another Phishing Email Detector
 
-JA-PED is a lightweight command-line tool that helps users quickly identify phishing attempts hidden within email content.Built for speed and offline use, it delivers instant predictions along with easy-to-understand explanations—without relying on complex infrastructure.
+JA-PED is a lightweight command-line tool that helps users quickly identify phishing attempts hidden within email content. Built for speed and offline use, it delivers instant predictions along with easy-to-understand explanations—without relying on complex infrastructure.
 
 ## About the project
 
-The project began with preparing a labeled dataset, followed by text cleaning and feature extraction using TF-IDF.A Logistic Regression model was then trained on this data, and both the model and vectorizer were saved for deployment.A Command-Line Interface (CLI) tool was built to load the trained model, accept email content from the user, and instantly predict whether the email is phishing or legitimate. The entire detection process works completely offline.
+The project began with preparing a labeled dataset, followed by text cleaning and feature extraction using TF-IDF. A Logistic Regression model was then trained on this data, and both the model and vectorizer were saved for deployment. A Command-Line Interface (CLI) tool was built to load the trained model, accept email content from the user, and instantly predict whether the email is phishing or legitimate. The entire detection process works completely offline.
 
 The application offers three modes of operation: `verbose`, `strict`, and `save`. These allow users to tighten detection criteria, view detailed classification insights, and log results for future reference.
 
@@ -12,16 +12,15 @@ The application offers three modes of operation: `verbose`, `strict`, and `save`
 
 * **Instant Classification**
   Detects if the email is phishing or legitimate within seconds
-
-- **Offline Functionality**
+* **Offline Functionality**
   No internet required after setup - the tool runs entirely on your local machine
-- **Verbose Mode**
+* **Verbose Mode**
   Provides explanantio for classification
-- **Strict Mode**
+* **Strict Mode**
   Enables tighter detection by lowering the threshold of the see you soon!picious content.
-- **Save Mode**
+* **Save Mode**
   Logs the predicted output to a file for future perusal.
-- **Lightweight Design**
+* **Lightweight Design**
   No dependencies on external servers or complex interfaces
 
 ## Technologies used
@@ -35,7 +34,7 @@ To set up JA-PED on your local machine:
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/shalinis97/JA-PED.git
+   git clone https://github.com/shalinis97/JA_PED.git
    cd JA-PED
    ```
 2. **Install the required dependencies**
@@ -102,8 +101,4 @@ For any queries or feedback, feel free to reach out:
 
 **Shalini Saravanan**
 
-Email: 24f2006531@ds.study.iitm.ac.in
-
-LinkedIn: [linkedin.com/in/shalini1487](https://linkedin.com/in/shalini1487) 
-
-GitHub: [github.com/shalinis97](https://github.com/shalinis97)
+Email: 24f2006531@ds.study.iitm.ac.in | LinkedIn: [linkedin.com/in/shalini148](https://linkedin.com/in/shalini1487) | GitHub: [github.com/shalinis97](https://github.com/shalinis97)
