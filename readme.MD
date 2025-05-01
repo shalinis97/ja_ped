@@ -87,7 +87,7 @@ Demo
 
 🎥 Watch a short demo of JA-PED in action:
 
-[📺 Click here to view the demo video](https://drive.google.com/file/d/1qdwTIwio7jbkElwszmV-snycvVgRG5Vm/view?usp=sharing)
+[📺 Click here to view the demo video](https://drive.google.com/file/d/170SQ47Jp-ZDH_PivjLlXVYar-5uCQ4hZ/view?usp=sharing)
 
 The demo shows:
 
