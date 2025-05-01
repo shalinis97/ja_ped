@@ -1,0 +1,3 @@
+Prediction: 🟢 Safe Email
+Probability: 0.35
+Threshold used: 0.5

@@ -1,0 +1,29 @@
+python3 ja_ped.py
+
+python3 ja_ped.py --verbose
+python3 ja_ped.py --strict
+python3 ja_ped.py --save
+
+python3 ja_ped.py --verbose --save
+
+phishing email:
+
+Subject: Urgent: Account Suspension Warning
+Dear Customer,
+We have detected unusual activity in your account. To avoid suspension, please verify your account immediately by clicking the link below:
+http://secure-paypal-alerts.com/verify
+Failure to do so within 24 hours will result in account termination.
+Sincerely,  
+PayPal Security Team
+
+safe email:
+
+Subject: Meeting Agenda for Friday
+Hi Shalini,
+Here’s the agenda for our team meeting on Friday. Let me know if you'd like to add anything else:
+1. Sprint retrospective  
+2. Roadmap planning  
+3. Blockers and support
+Best,  
+Ananya
+
