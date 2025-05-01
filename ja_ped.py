@@ -1,6 +1,7 @@
 import pickle
 import argparse
 import re
+import os
 
 # Load model and vectorizer
 with open('model/phishing_model.pkl', 'rb') as model_file:
@@ -25,9 +26,9 @@ parser.add_argument('--save', action='store_true', help='Save the prediction res
 args = parser.parse_args()
 
 # Input from user
-print("\nWelcome to JA-PED (Just Another Phising Email Detector!\n")
-print("\n-------------------------------------------------------\n")
-print("\nPlease paste your email content below:\n")
+print("\nWelcome to JA-PED (Just Another Phishing Email Detector)!\n")
+print("-----------------------------------------------------------\n")
+print("Please paste your email content below:\n")
 
 user_input = input("> ")
 
@@ -44,15 +45,24 @@ if args.strict:
 result = "🚨 Phishing Email" if prob >= threshold else "🟢 Safe Email"
 
 # Output
-print("\n-------------------------------------------------------\n")
-print(f"\n Prediction: {result}")
+print("\n-----------------------------------------------------------")
+print(f"Prediction: {result}")
 
 if args.verbose:
     print(f"Probability of phishing: {prob:.2f}")
     print(f"Threshold used: {threshold}")
+    
+    # Basic explanation logic based on probability
+    if prob >= threshold:
+        print("This email contains patterns (e.g., urgent language, links) similar to phishing emails seen during training.")
+    else:
+        print("This email does not match suspicious patterns commonly found in phishing emails.")
 
 if args.save:
-    with open("output.txt", "w") as f:
+    output_path = "output.txt"
+    with open(output_path, "w") as f:
         f.write(f"Prediction: {result}\n")
         f.write(f"Probability: {prob:.2f}\n")
-    print("Prediction saved to output.txt")
+        f.write(f"Threshold used: {threshold}\n")
+    print(f"Prediction saved to: {os.path.abspath(output_path)}")
+
