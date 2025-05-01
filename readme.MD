@@ -102,3 +102,5 @@ For any queries or feedback, feel free to reach out:
 
 **Shalini Saravanan**
 Email: 24f2006531@ds.study.iitm.ac.in
+
+LinkedIn: [linkedin.com/in/shalini1487](https://linkedin.com/in/shalini1487) GitHub: [github.com/shalinis97](https://github.com/shalinis97)
